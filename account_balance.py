@@ -39,7 +39,7 @@ class Account:
             return self.balance
         
         else:
-            print('Withdrawal exceed deposit')
+            print('Withdrawal exceeds deposit')
     
 
 
