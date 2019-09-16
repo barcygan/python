@@ -2,24 +2,29 @@
 # coding: utf-8
 
 
-#Python Script that use tinyjpg.com compression via API. Put the script in folder with .jpg files and run script inside in Python environment.
+#Python Script that uses tinyjpg.com compression via API. Put the script in folder with .jpg files and run script inside in Python environment.
 
-# connecting to tinyjpg API
 
 import tinify
+import os
+from pathlib import Path
+
+# connecting to tinyjpg API
 tinify.key = "594lphSHLsCFvsqBSQBG29sX0yTjRNmL"
 
 
-from pathlib import Path
 #print("File      Path:", Path(__file__).absolute())
 #print("Directory Path:", Path().absolute())  
 
 
+
+
 # getting current files path 
-# creating list of files elements in forlder
-import os
 files = os.listdir(Path().absolute())
+
+# creating list of files elements in forlder
 JPG_files = [_ for _ in files if _[-4:] == ".JPG"]
+
 
 
 # compressing files and save as 'compressed' + filename
