@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+
+#Python Script that use tinyjpg.com compression via API. Put the script in folder with .jpg files and run script inside in Python environment.
+
 # connecting to tinyjpg API
 
 import tinify
